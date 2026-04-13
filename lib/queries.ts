@@ -39,7 +39,7 @@ const PROJECT_FULL_FIELDS = `
  */
 async function safeFetch<T>(query: string, params: Record<string, unknown>, fallback: T): Promise<T> {
   try {
-    return await sanityClient.fetch<T>(query, params, { next: { revalidate: 3600 } });
+    return await sanityClient.fetch<T>(query, params, { next: { revalidate: 0 } });
   } catch (error) {
     console.warn("[Sanity] Fetch failed (is your Project ID configured?):", (error as Error).message);
     return fallback;

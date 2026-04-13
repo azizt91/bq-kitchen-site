@@ -12,7 +12,7 @@ export const sanityClient = createClient({
   projectId,
   dataset,
   apiVersion,
-  useCdn: true, // Use Sanity CDN for caching (faster reads)
+  useCdn: false, // Dinonaktifkan agar data selalu fresh dari Sanity
   perspective: "published",
 });
 

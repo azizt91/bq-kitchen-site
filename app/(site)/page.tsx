@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import Link from "next/link";
 import Image from "next/image";
 import { getFeaturedProjects, getAllServices, getSiteSettings } from "@/lib/queries";
