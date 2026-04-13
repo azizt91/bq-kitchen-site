@@ -127,6 +127,15 @@ export default function Header({ settings }: HeaderProps) {
 
       {/* ── Mobile Overlay ─────────────────────────────── */}
       <div className={`header__mobile ${isOpen ? "header__mobile--open" : ""}`}>
+        {/* Dedicated close button inside the overlay */}
+        <button
+          className="header__mobile-close"
+          onClick={() => setIsOpen(false)}
+          aria-label="Tutup menu"
+        >
+          <CloseIcon />
+        </button>
+
         <nav className="header__mobile-nav" aria-label="Navigasi mobile">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href} className="header__mobile-link" onClick={handleLinkClick}>

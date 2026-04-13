@@ -354,7 +354,7 @@ h3 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
-  z-index: 99;
+  z-index: 200;
 }
 
 .header__mobile--open {
@@ -392,6 +392,30 @@ h3 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
 .header__mobile-cta {
   margin-top: 0.5rem;
   font-size: 0.9375rem;
+}
+
+/* Close button positioned inside the mobile overlay */
+.header__mobile-close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  color: var(--color-white);
+  cursor: pointer;
+  z-index: 10;
+  transition: background var(--transition-base), transform var(--transition-base);
+}
+
+.header__mobile-close:hover {
+  background: rgba(212, 175, 55, 0.25);
+  transform: rotate(90deg);
 }
 
 /* Desktop breakpoint */
