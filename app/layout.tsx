@@ -8,6 +8,16 @@ export const metadata: Metadata = {
     default: "BQ Kitchen Set & Interior Design — Tegal & Slawi",
     template: "%s | BQ Kitchen Set Tegal Slawi",
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: [
+      { url: "/icon.png", sizes: "512x512", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+  },
   description:
     "Spesialis Kitchen Set & Interior Design kustom premium di Tegal dan Slawi. " +
     "Wujudkan dapur impian Anda bersama BQ Kitchen Set — konsultasi gratis!",
