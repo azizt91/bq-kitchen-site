@@ -81,8 +81,7 @@ export default function Header({ settings }: HeaderProps) {
         <Link href="/" className="header__logo" onClick={handleLinkClick}>
           <span className="header__logo-icon">BQ</span>
           <span className="header__logo-text">
-            {settings?.companyName || "Kitchen Set"}
-            <span className="header__logo-sub">&amp; Interior Design</span>
+            {settings?.companyName || "BQ Kitchen Set & Interior Design"}
           </span>
         </Link>
 
