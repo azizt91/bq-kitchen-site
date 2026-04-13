@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { buildWhatsAppUrl } from "@/types";
 import type { SiteSettings } from "@/types";
 
@@ -79,7 +80,14 @@ export default function Header({ settings }: HeaderProps) {
       <div className="container-site header__inner">
         {/* ── Logo ─────────────────────────────────────── */}
         <Link href="/" className="header__logo" onClick={handleLinkClick}>
-          <span className="header__logo-icon">BQ</span>
+          <Image
+            src="/bq-logo.png"
+            alt={settings?.companyName || "BQ Kitchen Set & Interior Design"}
+            width={56}
+            height={56}
+            className="header__logo-img"
+            priority
+          />
           <span className="header__logo-text">
             {settings?.companyName || "BQ Kitchen Set & Interior Design"}
           </span>
