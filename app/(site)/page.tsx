@@ -51,7 +51,7 @@ export default async function HomePage() {
         <div className="container-site hero__content">
           <p className="hero__eyebrow">BQ Kitchen Set &amp; Interior Design</p>
           <h1 className="hero__title">
-            Wujudkan <span className="gold-accent">Dapur Impian</span>{" "}di Tegal &amp; Slawi
+            Wujudkan <span className="gold-accent">Dapur Impian</span>{" "}di Slawi, Tegal &amp; Sekitarnya
           </h1>
           <p className="hero__subtitle">
             Spesialis Kitchen Set &amp; Interior Design Kustom — Pengerjaan Profesional, Material Premium, Hasil Elegan.
