@@ -3,21 +3,23 @@ import "./globals.css";
 
 // ── Global SEO Metadata ───────────────────────────────────────
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bqkitchen.vercel.app"), // Update with actual domain
+  metadataBase: new URL("https://bqkitchen.vercel.app"),
   title: {
     default: "BQ Kitchen Set & Interior Design — Tegal & Slawi",
     template: "%s | BQ Kitchen Set Tegal Slawi",
   },
+
+  // ── Favicon (browser tab icon) ────────────────────────────
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+      { url: "/bq-logo.png", type: "image/png", sizes: "512x512" },
     ],
     apple: [
-      { url: "/icon.png", sizes: "512x512", type: "image/png" },
+      { url: "/bq-logo.png", sizes: "512x512", type: "image/png" },
     ],
-    shortcut: "/favicon.ico",
+    shortcut: "/bq-logo.png",
   },
+
   description:
     "Spesialis Kitchen Set & Interior Design kustom premium di Tegal dan Slawi. " +
     "Wujudkan dapur impian Anda bersama BQ Kitchen Set — konsultasi gratis!",
@@ -36,6 +38,8 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "BQ Kitchen Set & Interior Design" }],
   creator: "BQ Kitchen Set",
+
+  // ── OG Image (pratinjau saat share link di WA, FB, dll) ──
   openGraph: {
     type: "website",
     locale: "id_ID",
@@ -43,11 +47,20 @@ export const metadata: Metadata = {
     title: "BQ Kitchen Set & Interior Design — Tegal & Slawi",
     description:
       "Spesialis Kitchen Set & Interior Design kustom premium di Tegal dan Slawi. Konsultasi gratis!",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 512,
+        height: 512,
+        alt: "BQ Kitchen Set & Interior Design — Logo",
+      },
+    ],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "BQ Kitchen Set & Interior Design — Tegal & Slawi",
     description: "Spesialis Kitchen Set & Interior Design kustom premium di Tegal dan Slawi.",
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
