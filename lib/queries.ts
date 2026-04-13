@@ -13,6 +13,7 @@ const PROJECT_CARD_FIELDS = `
   mainImage,
   localizedLocation,
   completionDate,
+  priceRange,
   "category": category->{ _id, title }
 `;
 
@@ -28,6 +29,7 @@ const PROJECT_FULL_FIELDS = `
   completionDate,
   materialsUsed,
   duration,
+  priceRange,
   "category": category->{ _id, title, briefDescription }
 `;
 
@@ -130,7 +132,8 @@ export async function getAllServices(): Promise<Service[]> {
       _type,
       title,
       icon,
-      briefDescription
+      briefDescription,
+      startingPrice
     }`,
     {},
     [],
