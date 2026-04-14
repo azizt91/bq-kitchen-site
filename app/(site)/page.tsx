@@ -194,7 +194,6 @@ export default async function HomePage() {
               <ul className="trust-block__list">
                 <li>✅ Material premium (HPL, Plywood, Engsel Blum)</li>
                 <li>✅ Tim berpengalaman &amp; profesional</li>
-                <li>✅ Garansi setiap proyek</li>
                 <li>✅ Konsultasi &amp; pengukuran GRATIS</li>
               </ul>
               <a href={waUrl} target="_blank" rel="noopener noreferrer" className="btn-primary">
