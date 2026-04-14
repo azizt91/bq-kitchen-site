@@ -45,39 +45,9 @@ export async function generateMetadata({
   };
 }
 
-// ─── Simple portable text renderer ──────────────────────────
-function renderPortableText(blocks: PortableTextContent | undefined) {
-  if (!blocks || blocks.length === 0) return null;
+import { PortableText } from '@portabletext/react';
 
-  return (
-    <div className="portable-text">
-      {blocks.map((block) => {
-        if (block._type !== "block") return null;
-        const b = block as {
-          _key: string;
-          style: string;
-          children: { _key: string; text: string; marks: string[] }[];
-        };
-
-        const text = b.children.map((child) => {
-          let content: React.ReactNode = child.text;
-          if (child.marks?.includes("strong")) content = <strong key={child._key}>{content}</strong>;
-          if (child.marks?.includes("em")) content = <em key={child._key}>{content}</em>;
-          return content;
-        });
-
-        switch (b.style) {
-          case "h2": return <h2 key={b._key}>{text}</h2>;
-          case "h3": return <h3 key={b._key}>{text}</h3>;
-          case "blockquote": return <blockquote key={b._key}>{text}</blockquote>;
-          default: return <p key={b._key}>{text}</p>;
-        }
-      })}
-    </div>
-  );
-}
-
-// ─── Project Detail Page ────────────────────────────────────
+// Using PortableText component from @portabletext/react directly in jsx later// ─── Project Detail Page ────────────────────────────────────
 export default async function ProjectPage({
   params,
 }: {
@@ -164,7 +134,9 @@ export default async function ProjectPage({
         <div className="container-site project-detail">
           {/* Left: Description */}
           <div className="project-detail__main">
-            {renderPortableText(project.description)}
+            <div className="portable-text">
+              {project.description ? <PortableText value={project.description as any} /> : null}
+            </div>
 
             {/* Project Info Cards */}
             <div className="project-info-cards">
