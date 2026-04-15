@@ -11,13 +11,9 @@ export const metadata: Metadata = {
 
   // ── Favicon (browser tab icon) ────────────────────────────
   icons: {
-    icon: [
-      { url: "/bq-logo.png", type: "image/png", sizes: "512x512" },
-    ],
-    apple: [
-      { url: "/bq-logo.png", sizes: "512x512", type: "image/png" },
-    ],
-    shortcut: "/bq-logo.png",
+    icon: '/bq-logo.png',
+    shortcut: '/bq-logo.png',
+    apple: '/bq-logo.png',
   },
 
   description:
