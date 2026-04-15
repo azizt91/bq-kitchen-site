@@ -3,7 +3,7 @@ import "./globals.css";
 
 // ── Global SEO Metadata ───────────────────────────────────────
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bqkitchen.vercel.app"),
+  metadataBase: new URL("https://www.kitchensetslawitegal.com"),
   title: {
     default: "BQ Kitchen Set & Interior Design — Tegal & Slawi",
     template: "%s | BQ Kitchen Set Tegal Slawi",
@@ -24,17 +24,20 @@ export const metadata: Metadata = {
     "Spesialis Kitchen Set & Interior Design kustom premium di Tegal dan Slawi. " +
     "Wujudkan dapur impian Anda bersama BQ Kitchen Set — konsultasi gratis!",
   keywords: [
-    "Jasa Kitchen Set Tegal",
+    "Kitchen Set Tegal",
     "Kitchen Set Slawi",
+    "Kitchen Set Lebaksiu",
     "Interior Design Tegal",
     "Interior Design Slawi",
-    "Kitchen Set Custom Tegal",
-    "Wardrobe Custom Slawi",
-    "Lemari Pakaian Custom Tegal",
-    "Interior Rumah Tegal",
-    "BQ Kitchen Set",
+    "Kitchen Set Slawi Tegal",
+    "Tukang Kitchen Set Tegal",
     "Kitchen Set Minimalis Tegal",
-    "Jasa Interior Slawi Tegal",
+    "Jasa Interior Tegal",
+    "Kitchen Set Brebes",
+    "Kitchen Set Pemalang",
+    "Custom Furniture Tegal",
+    "Lemari Pakaian Tegal",
+    "Backdrop TV Tegal",
   ],
   authors: [{ name: "BQ Kitchen Set & Interior Design" }],
   creator: "BQ Kitchen Set",
@@ -79,7 +82,7 @@ const localBusinessJsonLd = {
   name: "BQ Kitchen Set & Interior Design",
   description:
     "Spesialis Kitchen Set & Interior Design kustom premium di Tegal dan Slawi, Jawa Tengah.",
-  url: "https://bqkitchen.vercel.app",
+  url: "https://www.kitchensetslawitegal.com",
   telephone: "+6281385203317",
   address: {
     "@type": "PostalAddress",
@@ -101,7 +104,7 @@ const localBusinessJsonLd = {
       closes: "17:00",
     },
   ],
-  image: "https://bqkitchen.vercel.app/og-image.jpg",
+  image: "https://www.kitchensetslawitegal.com/og-image.png",
   priceRange: "Konsultasi Gratis",
   areaServed: [
     { "@type": "City", name: "Tegal" },
