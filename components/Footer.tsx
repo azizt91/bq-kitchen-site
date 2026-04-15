@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { SiteSettings } from "@/types";
 
 // ─── Social Icons ────────────────────────────────────────────
@@ -62,7 +63,13 @@ export default function Footer({ settings }: FooterProps) {
           {/* Column 1: Brand */}
           <div className="footer__brand">
             <Link href="/" className="footer__logo">
-              <span className="footer__logo-icon">BQ</span>
+              <Image
+                src="/bq-logo.png"
+                alt={settings?.companyName || "BQ Kitchen Set & Interior Design"}
+                width={40}
+                height={40}
+                className="footer__logo-img"
+              />
               <span className="footer__logo-text">
                 {settings?.companyName || "BQ Kitchen Set & Interior Design"}
               </span>
