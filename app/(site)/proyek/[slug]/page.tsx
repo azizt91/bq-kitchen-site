@@ -33,9 +33,9 @@ export async function generateMetadata({
     : undefined;
 
   return {
-    title: `${project.title} — ${project.localizedLocation || "Portfolio"}`,
+    title: `${project.title} — ${project.localizedLocation || "Proyek"}`,
     description: `Proyek ${project.title} di ${project.localizedLocation || "Tegal/Slawi"} oleh BQ Kitchen Set & Interior Design. ${project.category?.title || "Kitchen Set Custom"}.`,
-    alternates: { canonical: `/portfolio/${slug}` },
+    alternates: { canonical: `/proyek/${slug}` },
     openGraph: {
       title: `${project.title} | BQ Kitchen Set`,
       description: `Proyek ${project.category?.title || "Interior"} di ${project.localizedLocation || "Tegal/Slawi"}`,
@@ -106,8 +106,8 @@ export default async function ProjectPage({
         </div>
 
         <div className="container-site project-hero__content">
-          <Link href="/portfolio" className="project-hero__back">
-            ← Kembali ke Portfolio
+          <Link href="/proyek" className="project-hero__back">
+            ← Kembali ke Proyek
           </Link>
           <h1 className="project-hero__title">{project.title}</h1>
           <div className="project-hero__meta">

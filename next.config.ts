@@ -11,6 +11,15 @@ const nextConfig: NextConfig = {
     ],
     formats: ["image/avif", "image/webp"],
   },
+  async redirects() {
+    return [
+      {
+        source: "/portfolio/:path*",
+        destination: "/proyek/:path*",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

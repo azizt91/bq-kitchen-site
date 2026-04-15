@@ -15,17 +15,17 @@ interface ProjectCard {
   priceRange: string | null;
 }
 
-interface PortfolioFilterProps {
+interface ProyekFilterProps {
   projects: ProjectCard[];
   categories: string[];
   locations: string[];
 }
 
-export default function PortfolioFilter({
+export default function ProyekFilter({
   projects,
   categories,
   locations,
-}: PortfolioFilterProps) {
+}: ProyekFilterProps) {
   const [activeCategory, setActiveCategory] = useState<string>("Semua");
   const [activeLocation, setActiveLocation] = useState<string>("Semua");
 
@@ -88,7 +88,7 @@ export default function PortfolioFilter({
           {filteredProjects.map((project) => (
             <Link
               key={project._id}
-              href={`/portfolio/${project.slug}`}
+              href={`/proyek/${project.slug}`}
               className="project-card"
             >
               <div className="project-card__img">

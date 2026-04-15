@@ -57,7 +57,7 @@ export default async function HomePage() {
             Spesialis Kitchen Set &amp; Interior Design Kustom — Pengerjaan Profesional, Material Premium, Hasil Elegan.
           </p>
           <div className="hero__actions">
-            <Link href="/portfolio" className="btn-primary">
+            <Link href="/proyek" className="btn-primary">
               Lihat Katalog Proyek
             </Link>
             <a href={waUrl} target="_blank" rel="noopener noreferrer" className="btn-outline btn-outline--light">
@@ -70,10 +70,10 @@ export default async function HomePage() {
       {/* ═══════════════════════════════════════════════════════
           FEATURED PROJECTS
           ═══════════════════════════════════════════════════════ */}
-      <section id="portfolio" className="section-py">
+      <section id="proyek" className="section-py">
         <div className="container-site">
           <div className="section-header">
-            <p className="section-header__eyebrow gold-accent">Portfolio Terbaru</p>
+            <p className="section-header__eyebrow gold-accent">Proyek Terbaru</p>
             <h2 className="section-title">Proyek Pilihan Kami</h2>
             <p className="section-header__desc">
               Setiap proyek kami kerjakan dengan dedikasi tinggi dan perhatian terhadap detail.
@@ -85,7 +85,7 @@ export default async function HomePage() {
               {featuredProjects.map((project, idx) => (
                 <Link
                   key={project._id}
-                  href={`/portfolio/${project.slug?.current}`}
+                  href={`/proyek/${project.slug?.current}`}
                   className={`project-card ${idx === 0 ? "project-card--featured" : ""}`}
                 >
                   <div className="project-card__img">
@@ -123,7 +123,7 @@ export default async function HomePage() {
           )}
 
           <div className="section-cta">
-            <Link href="/portfolio" className="btn-outline">
+            <Link href="/proyek" className="btn-outline">
               Lihat Semua Proyek →
             </Link>
           </div>

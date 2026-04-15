@@ -8,7 +8,7 @@ import type { SiteSettings } from "@/types";
 
 // ─── Nav Links ───────────────────────────────────────────────
 const navLinks = [
-  { label: "Portfolio", href: "/portfolio" },
+  { label: "Proyek", href: "/proyek" },
   { label: "Layanan", href: "/#layanan" },
   { label: "Tentang Kami", href: "/#tentang" },
   { label: "Kontak", href: "/#kontak" },

@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { getAllProjects, getAllServices } from "@/lib/queries";
 import { imagePresets } from "@/lib/sanity.image";
-import PortfolioFilter from "./PortfolioFilter";
+import ProyekFilter from "./ProyekFilter";
 
 // ── SEO Metadata ─────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   description:
     "Lihat katalog lengkap proyek Kitchen Set, Wardrobe, dan Interior Design " +
     "yang telah kami kerjakan di area Tegal, Slawi, dan sekitarnya.",
-  alternates: { canonical: "/portfolio" },
+  alternates: { canonical: "/proyek" },
 };
 
 // ── Portfolio Page (Server Component) ────────────────────────
-export default async function PortfolioPage() {
+export default async function ProyekPage() {
   const [projects, services] = await Promise.all([
     getAllProjects(),
     getAllServices(),
@@ -57,7 +57,7 @@ export default async function PortfolioPage() {
       {/* Filter + Grid (client component) */}
       <section className="section-py">
         <div className="container-site">
-          <PortfolioFilter
+          <ProyekFilter
             projects={serializedProjects}
             categories={services.map((s) => s.title)}
             locations={locations}

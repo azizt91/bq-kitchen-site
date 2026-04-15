@@ -88,7 +88,7 @@ export default function Footer({ settings }: FooterProps) {
           <div className="footer__column">
             <h4 className="footer__heading">Menu</h4>
             <nav className="footer__links" aria-label="Footer navigation">
-              <Link href="/portfolio" className="footer__link">Portfolio</Link>
+              <Link href="/proyek" className="footer__link">Proyek</Link>
               <Link href="/#layanan" className="footer__link">Layanan</Link>
               <Link href="/#tentang" className="footer__link">Tentang Kami</Link>
               <Link href="/#kontak" className="footer__link">Kontak</Link>

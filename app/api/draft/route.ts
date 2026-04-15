@@ -18,5 +18,5 @@ export async function GET(request: Request) {
   (await draftMode()).enable();
 
   // Redirect to the slug being previewed, or fallback to homepage
-  redirect(slug ? `/portfolio/${slug}` : "/");
+  redirect(slug ? `/proyek/${slug}` : "/");
 }
